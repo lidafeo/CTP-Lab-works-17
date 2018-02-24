@@ -1,17 +1,17 @@
-//TODO: Класс Primes
+//TODO: РљР»Р°СЃСЃ Primes
 public class Primes 
 {
-	//TODO: Гланый метод, выводящий простые числа
+	//TODO: Р“Р»Р°РЅС‹Р№ РјРµС‚РѕРґ, РІС‹РІРѕРґСЏС‰РёР№ РїСЂРѕСЃС‚С‹Рµ С‡РёСЃР»Р°
 	public static void main(String[] args)
 	{
-		//TODO: Реализация программы
+		//TODO: Р РµР°Р»РёР·Р°С†РёСЏ РїСЂРѕРіСЂР°РјРјС‹
 		for(int i=2;i<=100;i++)
 			if(isPrime(i)==true)
 			System.out.print(" "+i);
 	}
 	public static boolean isPrime(int n)
 	{
-		//TODO: Проверка числа на простое
+		//TODO: РџСЂРѕРІРµСЂРєР° С‡РёСЃР»Р° РЅР° РїСЂРѕСЃС‚РѕРµ
 		for(int i=2;i<n;i=i+1)
 		{
 			if(n%i==0)
