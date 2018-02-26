@@ -1,27 +1,27 @@
 import java.util.Scanner;
-//Класс, вычисляющий площадь треугольника
+//РљР»Р°СЃСЃ, РІС‹С‡РёСЃР»СЏСЋС‰РёР№ РїР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
 public class Lab1
 {
-	//Ввод 3ех точек и вычисление области
+	//Р’РІРѕРґ 3РµС… С‚РѕС‡РµРє Рё РІС‹С‡РёСЃР»РµРЅРёРµ РѕР±Р»Р°СЃС‚Рё
 	public static void main(String[] args)
 	{
 		Point3d[] po = new Point3d[]{new Point3d(), new Point3d(), new Point3d()};
 		Scanner scanner = new Scanner(System.in);
 		for(int i =0;i<3;i++)
 		{
-			System.out.print("Введите координаты точки\n");
+			System.out.print("Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РєРё\n");
 			po[i].setX(Double.parseDouble(scanner.next()));
 			po[i].setY(Double.parseDouble(scanner.next()));
 			po[i].setZ(Double.parseDouble(scanner.next()));
 		}
-		//Сравнение точек
+		//РЎСЂР°РІРЅРµРЅРёРµ С‚РѕС‡РµРє
 		if(po[0].ravno(po[1])==true || po[0].ravno(po[2])==true || po[1].ravno(po[2])==true)
-			System.out.print("точки равны\n");
-		//Вывод области
+			System.out.print("С‚РѕС‡РєРё СЂР°РІРЅС‹\n");
+		//Р’С‹РІРѕРґ РѕР±Р»Р°СЃС‚Рё
 		else
-			System.out.print("область равна "+ computeArea(po[0],po[1],po[2]));
+			System.out.print("РѕР±Р»Р°СЃС‚СЊ СЂР°РІРЅР° "+ computeArea(po[0],po[1],po[2]));
 	}
-	//Вычисление площади треугольника
+	//Р’С‹С‡РёСЃР»РµРЅРёРµ РїР»РѕС‰Р°РґРё С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
 	public static double computeArea(Point3d a, Point3d b, Point3d c)
 	{
 		double ab, ac, bc;
